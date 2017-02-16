@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog curso</title>
+    <link rel="stylesheet" href="CSS3/estilo.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="encabezadotema">
+        <h1>CSS3</h1>
+    </div>
+    <div class="menutema">
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="HTML.html" class="temas">HTML</a>
+            <a href="#">CSS</a>
+        </ul>
+    </div>
+    <div class="slider">
+        <a href="#">Definición</a>
+        <a href="#">Reglas</a>
+        <a href="#">Tipos de estilos</a>
+        <a href="#">Agrupación de elementos</a>
+        <a href="#">Propiedades</a>
+        <a href="#">Modelo de caja</a>
+    </div>
+    <div id="contenido">
+        <h2>Definición</h2>
+        <p>
+CSS son las siglas de Cascading Style Sheets - Hojas de Estilo en Cascada - que es un lenguaje que describe la presentación de los documentos estructurados en hojas de estilo para diferentes métodos de interpretación, es decir, describe como se va a mostrar un documento en pantalla, por impresora, por voz (cuando la información es pronunciada a través de un dispositivo de lectura) o en dispositivos táctiles basados en Braille.
+CSS es una especificación desarrollada por el W3C (World Wide Web Consortium) para permitir la separación de los contenidos de los documentos escritos en HTML, XML, XHTML, SVG, o XUL de la presentacin del documento con las hojas de estilo, incluyendo elementos tales como los colores, fondos, márgenes, bordes, tipos de letra..., modificando as la apariencia de una página web de una forma más sencilla, permitiendo a los desarrolladores controlar el estilo y formato de sus documentos.
+El lenguaje CSS se basa en una serie de reglas que rigen el estilo de los elementos en los documentos estructurados, y que forman la sintaxis de las hojas de estilo. Cada regla consiste en un selector y una declaración, esta última va entre corchetes y consiste en una propiedad o atributo, y un valor separados por dos puntos.
+
+<ul>
+    <li>Versiones:</li>
+    <ul>
+        <li>CSS1--->1996 (Borrador)--->1999 (Liberado)--->2001 (Soportado por todos los navegadores)</li>
+	<li>CSS2--->1998 (Borrador)--->2007 (liberado)</li>
+	<li>CSS3--->2001 (Borrador)--->2013 (Liberado)</li>
+    </ul>
+</ul>
+        </p>
+        <h2>Reglas</h2>
+        <p>
+            Permiten cambiar la apariencia de los elementos de HTML.
+
+            Sintaxis general:<br>
+            &nbspselector { Declaraciones }<br>
+            <br>
+            Declaraciones:<br>
+            &nbspPropiedad: valor;<br>
+            Ejemplo:<br>
+            &nbsph1{color:blue;}<br>
+            Donde:<br>
+            &nbsp<b>h1:</b> es la etiqueta a la que le quiero aplicar el estilo.<br>
+            &nbsp<b>{color:blue;}:</b>es la declaración.<br>
+            &nbsp<b>color:</b> es la propiedad que quiero modificar.<br>
+            &nbsp<b>blue:</b> es el valor.<br>
+            <h3>Selector</h3>
+            El Selector especifica que elementos HTML van a estar afectados por esa declaración, de manera que hace de enlace entre la estructura del documento y la regla estilística en la hoja de estilo.
+            <h3>Declaración</h3>
+            La Declaración que va entre corchetes es la información de estilo que indica cómo se va a ver el selector. En caso de que haya más de una declaración se usa punto y coma para separarlas.
+            <h3>Propiedad o Atributo y Valor</h3>
+            Dentro de la declaración, la Propiedad o Atributo define la interpretación del elemento asignándosele un cierto Valor, que puede ser color, alineación, tipo de fuente, tamaño..., es decir, especifican qué aspecto del selector se va a cambiar.
+        </p>
+        <h2>Tipos de estilo</h2>
+        <p>
+            <h3>Estilo en Línea</h3>
+            El Estilo en Línea sirve para insertar el lenguaje de estilo directamente dentro de la sección body con el elemento style. Sin embargo, este tipo de estilo no se recomienda pues se debe intentar siempre separar el contenido de la presentación.
+            <h3>Hoja de Estilo Interna</h3>
+            La Hoja de Estilo Interna est incorporada a un documento HTML, a través del elemento style dentro de la sección head, consiguiendo de esta manera separar la información del estilo del código HTML.
+            <h3>Hoja de Estilo Externa</h3>
+            La Hoja de Estilo Externa se almacena en un archivo diferente al del archivo con el código HTML al cal estar vinculado a través del elemento link, que debe ir situado en la sección head. Es la manera de programar ms eficiente, ya que separa completamente las reglas de formato para la página HTML de la estructura básica de la página.
+
+        </p>
+        <h2>Agrupación de elementos</h2>
+        <p>
+            div Agrupar elementosen bloque. Genera divisiones entre cada bloque<br>
+            span Agrupa elementos en linea. Genera divisiones pero sobre la misma linea<br>
+        </p>
+        <h2>Propiedades</h2>
+        <p>
+            En css hay muchas propiedades tantas que no se pueden abarcar todas en un curso, sin embargo todas las propiedades las podemos encontrar en diversas paginas de internet.<br>
+            Aquí se presentaran algunas propiedades:<br>
+            <ul>
+                <li><b>Color</b>
+                    <ul>
+                        <li>nombre</li>
+                        <li>Hexadecimal</li>
+                        <li>rgb()</li>
+                        <li>rbga()</li>
+                        <li>hsl()</li>
+                        <li>hsla()</li>
+                    </ul>
+                </li>
+                <li><b>Fuentes</b>
+                    <ul>
+                        <li>Familias
+                            <ul>
+                                <li>Serif</li>
+                                <li>Sans-serif</li>
+                                <li>Monospace</li>
+                            </ul>
+                        </li>
+                        <li>font-family</li>
+                        <li>font-style</li>
+                        <li>font-size</li>
+                        <li>font-weight</li>
+                    </ul>
+                </li>
+                <li><b>Texto</b>
+                    <ul>
+                        <li>subrayado</li>
+                        <li>sobrerayado</li>
+                        <li>tachado</li>
+                        <li>parpadeo</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+        <h2>Modelo de caja</h2>
+        <p>
+            
+        </p>
+        <div id="Fuentes">
+            <h4>Fuentes:</h4>
+            <p>
+                Mi libreta :)<br>
+                <a href="http://www.masadelante.com/faqs/css">http://www.masadelante.com/faqs/css</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
